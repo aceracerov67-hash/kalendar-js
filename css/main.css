@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.calendar {
+  width: 320px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.days, .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.days div {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.dates div {
+  padding: 10px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dates div:hover {
+  background: #eee;
+}
+
+.today {
+  background: #007bff;
+  color: white;
+}
+
+
